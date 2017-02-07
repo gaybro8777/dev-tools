@@ -15,7 +15,8 @@ if [ -d "$BUILD_BASE/build-wf" ]; then
   git pull
 else
   echo "doing git clone"
-  git clone "$GITHUB_URL/build-wf.git"
+#  git clone "$GITHUB_URL/build-wf.git"
+  git clone "https://github.com/Azure-Refactor/build-wf.git"
 fi
 sleep 2
 
