@@ -16,7 +16,7 @@ if [ -d "$BUILD_BASE/build-wf" ]; then
 else
   echo "doing git clone"
 #  git clone "$GITHUB_URL/build-wf.git"
-  git clone "https://github.com/Azure-Refactor/build-wf.git"
+  git clone "https://github.com/hrodz13/build-wf.git"
 fi
 sleep 2
 

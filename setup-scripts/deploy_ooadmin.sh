@@ -21,11 +21,13 @@ if [ -d "$BUILD_BASE/circuit-oneops-1" ]; then
   git pull
 else
   echo "doing git clone"
-  git clone "$GITHUB_URL/circuit-oneops-1.git"
+#  git clone "$GITHUB_URL/circuit-oneops-1.git"
+  git clone "https://github.com/hrodz13/circuit-oneops-1.git"
 fi
 sleep 2
 
 cd "$BUILD_BASE/circuit-oneops-1"
+git checkout testing/fog-arm-migration
 circuit install
 
 echo "install inductor as ooadmin"
